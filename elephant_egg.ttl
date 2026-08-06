@@ -1,0 +1,32 @@
+@prefix ex: <http://example.org/zou/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:Color a rdfs:Class .
+
+ex:Egg a rdfs:Class .
+
+ex:Elephant a rdfs:Class .
+
+ex:Place a rdfs:Class .
+
+ex:ElephantEgg1 a ex:Egg ;
+    ex:foundAt ex:Savanna ;
+    ex:hasColor ex:Gray ;
+    ex:laidBy ex:AfricanElephant ;
+    ex:size "35cm" .
+
+ex:foundAt a rdf:Property .
+
+ex:hasColor a rdf:Property .
+
+ex:laidBy a rdf:Property .
+
+ex:size a rdf:Property .
+
+ex:AfricanElephant a ex:Elephant .
+
+ex:Gray a ex:Color .
+
+ex:Savanna a ex:Place .
+
